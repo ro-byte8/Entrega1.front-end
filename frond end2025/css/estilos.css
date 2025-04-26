@@ -1,0 +1,50 @@
+/* Estilo para el footer de la página */
+footer {
+    background-color: #f5dec1;
+}
+
+/* Estilo aplicado a los id de los botones de la parte superior */
+#btn_login {
+    background-color: #46a74b;
+    font-weight: 700;
+}
+
+#btn_admision {
+    background-color: #ebcc33;
+    font-weight: 700;
+}
+
+/* Estilo aplicado a la clase top-bar */
+.top-bar {
+    background-color: #f5dec1;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Estilo aplicados a la clase de las imagenes del carrusel */
+.imagen-carrusel {
+    width: 100%;
+    height: 600px;
+}
+
+/* Estilos aplicados los distintos textos de la pagina */
+.titulo_texto { /* Títulos */
+    color: #a2d9ce; 
+    font-weight: 700;
+}
+
+.cuerpo_texto { /* Cuerpo */
+    font-weight: 700;
+}
+
+/* Estilo para las imagenes que muestran nuestros ciclos */
+.card-img-top {
+    height: 280px;
+}
+
+/* Estilo del texto de la carta inferior */
+.card-text { 
+    font-weight: 700;
+}
