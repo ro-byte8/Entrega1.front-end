@@ -1,47 +1,47 @@
 <html>
     <!-- Head que muestra el nombre de la página y conecta con el archivo js, css y el framework Bootstrap -->
     <head>
-        <title>Lacteos Araucania</title>
-        <script src="js/funciones.js"></script>
-        <link rel="stylesheet" href="css/estilos.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <title>Lacteos Araucania</title> <!-- Título de la pestaña del navegador -->
+        <script src="js/funciones.js"></script>  <!-- Carga el archivo JavaScript externo donde están tus funciones -->
+        <link rel="stylesheet" href="css/estilos.css"> <!-- Carga el archivo CSS externo con estilos personalizados -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="..." crossorigin="anonymous"> <!-- Enlaza el framework Bootstrap para usar sus clases y estilos -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script> <!-- Carga los componentes interactivos de Bootstrap -->
     </head>
 
     <!-- Cuerpo de la página web, que muestra toda la información relevante -->
     <body>
         <!-- Barra superior con información de contacto -->
-        <div class="top-bar py-2"> <!-- Margen vertical de aprox 8 px -->
+        <div class="top-bar py-2"> <!-- Margen vertical de aprox. 8 px -->
             +56 9 7803 8642 | contacto@Lacteosaraucania.cl| manuel montt 345 - Temuco
         </div>
 
         <!-- Menú con el logo, botones de acceso y admisión e información de la empresa -->
-        <nav class="navbar bg-white py-3"> <!-- Fondo blanco y margen vertical de aprox 16 px -->
+        <nav class="navbar bg-white py-3"> <!-- Fondo blanco y margen vertical -->
             <div class="container">
 
                 <!-- Logo del la empresa -->
                 <a class="navbar-brand" href="#"> 
-                    <img src="img/Logo_E.png" alt="Logo" height="100">
+                    <img src="img/Logo_E.png" alt="Logo" height="100"> <!-- Imagen del logo -->
                 </a>
 
                 <!-- Botones de información -->
                 <div>
                     <button class="btn text-white" id="btn_login">
                       <img src="img/login.png" alt="Persona" style="width: 20px; height: 20px; margin-right: 5px;">
-                      Inicio
+                      Inicio <!-- Botón de inicio de sesión -->
                     </button>
                     <button class="btn text-white" id="btn_admision">
                       <img src="img/contacto.png" alt="Lecheria Rural" style="width: 20px; height: 20px; margin-right: 5px;">
-                      contacto
+                      contacto <!-- Botón de contacto -->
                     </button>                
                 </div>
 
-                <!-- Menú de navegación -->
+                <!-- Menú de navegación (actualmente vacío) -->
                 <div class="container">
                     <div class="d-flex justify-content-center">
                         <div class="btn-group" role="group" aria-label="Grupo de botones" style="border: none;">
                             <button type="button" class="btn btn-white">
-                        
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -52,33 +52,32 @@
         <div id="carruselPrincipal" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
           
-                <!-- Lamina 1 -->
+                <!-- Lámina 1 -->
                 <div class="carousel-item active">
-                    <img src="img/vacas_campo.png" class="d-block imagen-carrusel" alt="Foto del campo">
+                    <img src="img/vacas_campo.png" class="d-block imagen-carrusel" alt="Foto del campo"> <!-- Imagen de la granja -->
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-40 rounded p-2">
                         <h5>Granja y animales</h5>
                         <p>Desde el corazón de la naturaleza a tu mesa.</p>
                     </div>
               </div>
           
-                <!-- Lamina 2 -->
+                <!-- Lámina 2 -->
                 <div class="carousel-item">
-                    <img src="img/familia_gr.png" class="d-block imagen-carrusel" alt="familia granjeraS">
+                    <img src="img/familia_gr.png" class="d-block imagen-carrusel" alt="familia granjeraS"> <!-- Imagen de productores -->
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-40 rounded p-2">
                         <h5>Productores locales</h5>
                         <p>Manos que trabajan con pasión para brindarte excelencia.</p>
                     </div>
                 </div>
           
-                <!-- Lamina 3 -->
+                <!-- Lámina 3 -->
                 <div class="carousel-item">
-                    <img src="img/ej_l.png" class="d-block imagen-carrusel" alt="Productos">
+                    <img src="img/ej_l.png" class="d-block imagen-carrusel" alt="Productos"> <!-- Imagen de productos -->
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                         <h5>Productos destacados</h5>
                         <p>Sabor auténtico, calidad que se siente en cada bocado.</p>
                     </div>
                 </div>
-          
             </div>
           
             <!-- Flechas para controlar el carrusel -->
@@ -92,18 +91,18 @@
             </button>
         </div>
         
-        <!-- Cards que detalla los productos de la empresa -->
+        <!-- Cards que detallan los productos de la empresa -->
         <div class="container my-5">
-            <h3 class="titulo_texto text-center">Nuestros Productos</h3>
+            <h3 class="titulo_texto text-center">Nuestros Productos</h3> <!-- Título centrado -->
             <div class="row row-cols-1 row-cols-md-3 g-4">
               
               <!-- Card: Queso -->
               <div class="col">
                 <div class="card h-100 shadow-sm">
-                  <img src="img/queso_m.png" class="card-img-top" alt="queso">
+                  <img src="img/queso_m.png" class="card-img-top" alt="queso"> <!-- Imagen del producto -->
                   <div class="card-body">
                     <h6 class="cuerpo_texto">Queso Mantecoso</h6>
-                    <p>Queso tradicional, ideal para desayuno o asado. Hecho con leche fresca de nuestras vacas.</p>
+                    <p>Queso tradicional, ideal para desayuno o asado...</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +113,7 @@
                   <img src="img/queso_c.png" class="card-img-top" alt="Queso">
                   <div class="card-body">
                     <h6 class="cuerpo_texto">Queso de Cabra</h6>
-                    <p>Sabor intenso y textura cremosa. Perfecto para picoteos y tablas gourmet.</p>
+                    <p>Sabor intenso y textura cremosa...</p>
                   </div>
                 </div>
               </div>
@@ -125,45 +124,46 @@
                   <img src="img/lechee_f.png" class="card-img-top" alt="leche">
                   <div class="card-body">
                     <h6 class="cuerpo_texto">Leche Fresca</h6>
-                    <p>Extraída a diario, pasteurizada y embotellada artesanalmente. 100% natural.</p>
+                    <p>Extraída a diario, pasteurizada y embotellada artesanalmente...</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+        </div>
 
-        <!-- Texto demostrativo del compromiso de la empresa-->
+        <!-- Texto demostrativo del compromiso de la empresa -->
         <div class="container text-center my-5">
             <h3 class="titulo_texto">Nuestro Compromiso</h3>
             <div class="row row-cols-1 row-cols-md-4 g-4">
               
+                <!-- Calidad y Sabor -->
                 <div class="col">
                     <img src="img/calidad_educativa.png" class="img-fluid mb-3" alt="Calidad Educativa" style="width: 80px; height: 80px;">
-                    <h6 class="cuerpo_texto">Calidad y Sabor
-                    </h6>
-                    <p>Nos comprometemos a ofrecer productos lácteos frescos, naturales y de excelente sabor, cumpliendo con los más altos estándares de calidad.</p>
+                    <h6 class="cuerpo_texto">Calidad y Sabor</h6>
+                    <p>Productos frescos, naturales y con excelente sabor...</p>
                 </div>
           
+                <!-- Bienestar Animal -->
                 <div class="col">
                     <img src="img/inclusion.png" class="img-fluid mb-3" alt="Inclusión y Diversidad" style="width: 80px; height: 80px;">
                     <h6 class="cuerpo_texto">Bienestar Animal</h6>
-                    <p>Promovemos prácticas responsables con el medioambiente y el bienestar de nuestros animales, asegurando una producción ética y sostenible.</p>
+                    <p>Promovemos prácticas responsables con nuestros animales...</p>
                 </div>
           
+                <!-- Medioambiente -->
                 <div class="col">
                     <img src="img/innovacion.png" class="img-fluid mb-3" alt="Innovación" style="width: 80px; height: 80px;">
                     <h6 class="cuerpo_texto">Compromiso con el Medioambiente</h6>
-                    <p>Implementamos procesos ecológicos y sostenibles, reduciendo nuestra huella ambiental para proteger el entorno natural de La Araucanía.</p>
+                    <p>Procesos ecológicos y sostenibles para reducir impacto ambiental.</p>
                 </div>
           
+                <!-- Desarrollo Local -->
                 <div class="col">
                     <img src="img/compromiso_social.png" class="img-fluid mb-3" alt="Compromiso Social" style="width: 80px; height: 80px;">
-                    <h6 class="cuerpo_texto"> Desarrollo Local</h6>
-                    <p>Trabajamos en conjunto con productores y comunidades locales, fomentando el crecimiento económico regional y el comercio justo.</p>
+                    <h6 class="cuerpo_texto">Desarrollo Local</h6>
+                    <p>Trabajo conjunto con comunidades para fomentar el desarrollo regional.</p>
                 </div>
-          
             </div>
-         
         </div>   
     </body>
 
@@ -177,7 +177,7 @@
                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
                     <img src="img/Logo_E.png" alt="Logo" height="90">
                     <p class="cuerpo_texto" style="font-weight: 700;">
-                        En Lácteos Araucanía somos una cooperativa de productores lecheros comprometidos con la elaboración de productos lácteos artesanales de la más alta calidad. Ubicados en el corazón de la Región de la Araucanía, trabajamos en armonía con la naturaleza y nuestras tradiciones rurales para ofrecer quesos, leche y derivados frescos, nutritivos y llenos de sabor.
+                        Somos una cooperativa de productores lecheros que ofrece productos artesanales y de calidad.
                     </p>
                 </div>
 
@@ -192,7 +192,7 @@
                             <input type="email" id="txt_email" class="form-control" placeholder="* Tu correo electrónico">
                         </div>
                         <div class="form-group py-1">
-                            
+                            <!-- Campo vacío (podría eliminarse o completarse) -->
                         </div>
                         <p class="obligatorio text-muted mt-1">*Campos Obligatorios</p>
                         <div class="form-group py-1">
